@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyothi Sai Priya Suggula | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: linear-gradient(135deg, #f0f9ff 0%, #cfe0fc 100%);
+      --text-light: #1a1a1a;
+      --bg-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      --text-dark: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      line-height: 1.6;
+      transition: background 0.5s, color 0.5s;
+    }
+    body.dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      background: #002b80;
+      color: white;
+      position: relative;
+    }
+    .section-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .section-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .section-links a:hover {
+      background: #0044cc;
+      transform: translateY(-2px);
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #004080;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #4da6ff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p.tagline {
+      font-size: 1.2rem;
+      color: #cce0ff;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      color: #004080;
+      margin-bottom: 20px;
+      border-left: 6px solid #66b3ff;
+      padding-left: 15px;
+    }
+    ul, .grid {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: white;
+      margin: 10px 0;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    body.dark-mode ul li, body.dark-mode .card, body.dark-mode table {
+      background: #2e2e48;
+      color: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    table th, table td {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+    table th {
+      background: #66b3ff;
+      color: white;
+    }
+    .contact-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .contact-info a {
+      display: inline-block;
+      margin: 5px 15px;
+      color: #004080;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+    }
+    body.dark-mode .footer {
+      background: #1f1f30;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+
+  <header>
+    <img src="WhatsApp Image 2025-07-17 at 12.02.25.jpeg" class="profile-pic" />
+    <h1>Jyothi Sai Priya Suggula</h1>
+    <p class="tagline">B.Tech CSE | SRM University Amaravati | Passionate Developer & Designer</p>
+    <div class="section-links">
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#languages">Languages</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <table>
+      <tr><th>Qualification</th><th>Institution</th><th>Score</th></tr>
+      <tr><td>📘 10th</td><td>Montessori School</td><td>97%</td></tr>
+      <tr><td>📗 Intermediate</td><td>NRI Junior College</td><td>96.5%</td></tr>
+      <tr><td>🎓 B.Tech CSE</td><td>SRM University, Amaravati</td><td>Current CGPA: 8.4</td></tr>
+    </table>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">🧠 Quiz App – Designed using C for quick assessments</div>
+      <div class="card">🤖 ClassRoom CHATBOT– AI Classroom Chat Assistant (C++)</div>
+      <div class="card">👗 Tera – Personalized Tailoring App (Web Tech)</div>
+      <div class="card">☕ Cafe Management – Smart Cafe Ordering System (Web Tech)</div>
+      <div class="card">📄 PDF Converter – PDF Format Converter (Python)</div>
+      <div class="card">💸 Fin_Tech – Teen-Focused Fintech Wireframe (Figma)</div>
+      <div class="card">📰 MahaNews – Regional News App UI (Figma)</div>
+      <div class="card">🔐 Dynamic Login – Dynamic Login Page (Dart)</div>
+      <div class="card">💰 ExpenseTracker – Expense Tracking Web App</div>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>📊 Tata – Data Visualization Certified</li>
+      <li>🤖 AWS – Generative AI for Developers</li>
+      <li>☁️ Aviatrix – Multicloud Associate Badge</li>
+      <li>📚 Coursera – Google AI Essentials</li>
+      <li>🏆 Hackvyuha'25 – Best Beginner Award Winner</li>
+    </ul>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>🧩 Programming: C, C++, Python</li>
+      <li>🌐 Full Stack Web Development</li>
+      <li>🛠️ UI/UX Design with Figma</li>
+      <li>⚙️ APIs & Authentication</li>
+    </ul>
+  </section>
+
+  <section class="section" id="languages">
+    <h2>Languages Known</h2>
+    <ul>
+      <li>🗣️ English</li>
+      <li>🗣️ Telugu</li>
+      <li>🗣️ Hindi</li>
+    </ul>
+  </section>
+
+  <section class="section contact-info" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jyothisuggula8@gmail.com">jyothisuggula8@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919392951949">+91 93929 51949</a></p>
+    <a href="https://www.linkedin.com/in/jyothi-suggula-" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Jyothi84300/" target="_blank">GitHub</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Jyothi Sai Priya Suggula | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const button = document.querySelector('.toggle-btn');
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+      button.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+    console.log("✨ Welcome to Jyothi's interactive portfolio ✨");
+  </script>
+</body>
+</html>
