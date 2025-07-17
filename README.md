@@ -22,7 +22,7 @@ Welcome to my personal portfolio! This responsive website showcases my backgroun
 
 ## 📁 Folder Structure
 
-├── index.html
+├── jyothi_portfolio.html
 ├── README.md
-└── assets/ (optional - for images or icons if used locally)
+└── assets
 
