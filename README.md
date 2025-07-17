@@ -20,10 +20,6 @@ Welcome to my personal portfolio! This responsive website showcases my backgroun
 - Google Fonts  
 - JavaScript (for theme toggle)  
 
-## 📸 Website Preview
-
-![Portfolio Screenshot](https://drive.google.com/uc?export=view&id=16E0f1ApIYzcnRLiYe3J48rghz00vfnGV)
-
 ## 📁 Folder Structure
 
 ├── index.html
